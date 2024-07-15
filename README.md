@@ -11,7 +11,6 @@ See the [Generic Installation](https://github.com/FirefoxCSS-Store/FirefoxCSS-St
 ## Gallery
 ### Please ignore the chrome changes, they are NOT part of this theme
 <img src="/screenshots/main.png">
-<img src="/screenshots/contextMenu.png">
 <img src="/screenshots/edit.png">
 <img src="/screenshots/contextMenu.png">
 <img src="/screenshots/overlay.png">
