@@ -1,5 +1,5 @@
 # GlassyFox
-glassy-looking theme for Firefox
+glassy-looking theme for the Firefox new tab page
 
 ## Installation
 See the [Generic Installation](https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/README.md#generic-installation) guide.
