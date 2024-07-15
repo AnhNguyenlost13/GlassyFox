@@ -22,19 +22,18 @@
 		   name "newTabBG.png" in the img folder in "chrome". */
 		background-image: url(img/newTabBG.png) !important;
 		background-position: 0% 0 !important; 
-		transition: background-position 1s ease-in-out !important; 
-	
-
+		transition: background-position 1s ease-in-out !important;
+	}
   /* hacks */
   :root[lwt-newtab-brighttext] {
-        --newtab-background-color: #FFFFFF00 !important;
+        --newtab-background-color: #FFF0 !important;
         --newtab-background-color-secondary: #FFFFFF00 !important;
   }
     
   :root {
-        --newtab-background-color: #FFFFFF00 !important;
-        --newtab-background-color-secondary: #FFFFFF00 !important;
-        --newtab-overlay-color: #FFFFFF00 !important;
+        --newtab-background-color: #FFF0 !important;
+        --newtab-background-color-secondary: #FFF0 !important;
+        --newtab-overlay-color: #FFF0 !important;
   }
   
   .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
