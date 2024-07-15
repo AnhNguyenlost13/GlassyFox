@@ -24,6 +24,7 @@
 		background-position: 0% 0 !important; 
 		transition: background-position 1s ease-in-out !important;
 	}
+	
   /* hacks */
   :root[lwt-newtab-brighttext] {
         --newtab-background-color: #FFF0 !important;
@@ -40,6 +41,10 @@
     /* background: var(--newtab-element-hover-color); */
   }
   
+  .personalize-button {
+   z-index: 1;
+  }
+   
   .modal-overlay {
    backdrop-filter: blur(15px) brightness(80%);
   }
