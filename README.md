@@ -1,5 +1,5 @@
 # GlassyFox
-glassy-looking theme for the Firefox new tab page
+glassy-looking theme for the **Firefox new tab page**
 
 ## Installation
 See the [Generic Installation](https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/README.md#generic-installation) guide.
@@ -15,3 +15,5 @@ See the [Generic Installation](https://github.com/FirefoxCSS-Store/FirefoxCSS-St
 <img src="/screenshots/contextMenu.png">
 <img src="/screenshots/overlay.png">
 <img src="/screenshots/sidebar.png">
+<img src="/screenshots/recentActivity.png">
+

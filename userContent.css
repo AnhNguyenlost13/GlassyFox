@@ -1,102 +1,112 @@
   
 @-moz-document url(about:newtab), url(about:home) {
+    .outer-wrapper::before {
+        /* I don't know what I'm doing here but this works */
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
 
-  .outer-wrapper::before {
-   /* I don't know what I'm doing here but this works */
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  
-  /* Adjust this to your needs. */
-  backdrop-filter: blur(15px) brightness(90%);
-  }
-  
-  .outer-wrapper {
-		background-size: cover !important;
-		background-repeat: no-repeat !important;
-		/* Change the below to your background path,
-		   or place your background image with file
-		   name "newTabBG.png" in the img folder in "chrome". */
-		background-image: url(img/newTabBG.png) !important;
-		background-position: 0% 0 !important; 
-		transition: background-position 1s ease-in-out !important;
-	}
-	
-  /* hacks */
-  :root[lwt-newtab-brighttext] {
-        --newtab-background-color: #FFF0 !important;
-        --newtab-background-color-secondary: #FFFFFF00 !important;
-  }
+        /* Adjust this to your needs. */
+        backdrop-filter: blur(15px) brightness(90%);
+    }
+
+    .outer-wrapper {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        /* Change the below to your background path,
+		       or place your background image with file
+		       name "newTabBG.png" in the img folder in "chrome". */
+        background-image: url(img/newTabBG.png) !important;
+        background-position: 0% 0 !important;
+        transition: background-position 1s ease-in-out !important;
+    }
+
+    /* hacks */
+    :root[lwt-newtab-brighttext] {
+        --newtab-background-color: #fff0 !important;
+        --newtab-background-color-secondary: #ffffff00 !important;
+    }
+
+    :root {
+        --newtab-background-color: #fff0 !important;
+        --newtab-background-color-secondary: #fff0 !important;
+        --newtab-overlay-color: #fff0 !important;
+    }
+
+    /* salvage readability */
+    .section-title {
+        text-shadow: 1px 1px 1px #222;
+    }
+
+    .personalize-button {
+        z-index: 1;
+    }
+
+    .card {
+        backdrop-filter: brightness(70%);
+    }
+
+    .modal-overlay {
+        backdrop-filter: blur(15px) brightness(80%);
+    }
+
+    .modal {
+        backdrop-filter: blur(15px) brightness(80%);
+    }
+    .section-empty-state {
+        backdrop-filter: brightness(80%);
+    }
     
-  :root {
-        --newtab-background-color: #FFF0 !important;
-        --newtab-background-color-secondary: #FFF0 !important;
-        --newtab-overlay-color: #FFF0 !important;
-  }
-  
-  .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
-    /* background: var(--newtab-element-hover-color); */
-  }
-  
-  .personalize-button {
-   z-index: 1;
-  }
-   
-  .modal-overlay {
-   backdrop-filter: blur(15px) brightness(80%);
-  }
-  
-  .modal {
-   backdrop-filter: blur(15px) brightness(80%);
-  }
-  
-  .top-site-outer .context-menu-button {
-    backdrop-filter: blur(15px);
-  }
-  
-  .top-site-outer .tile {
-    /*! background-color: var(--newtab-background-color-secondary); */
-    backdrop-filter: blur(15px) brightness(80%);
-    border: 2px solid #ffffff1f;
-  }
-  
-  .customize-menu {
-    backdrop-filter: blur(15px) brightness(90%);
-  }
-  
-  .modalOverlayOuter {
-    backdrop-filter: blur(15px) brightness(69%);
-  }
-	
-	.context-menu {
-	  /*! background: var(--newtab-background-color-secondary); */
-	  z-index: 10;
-   backdrop-filter: blur(15px) brightness(90%);
-  }
-  
-	.logo-and-wordmark {
-		width: 512px;
+    .top-site-outer .context-menu-button {
+        backdrop-filter: blur(15px);
+    }
+    
+    .card-outer {
+        border: 2px solid #ffffff1f;
+    }
+    
+    .top-site-outer .tile {
+        /*! background-color: var(--newtab-background-color-secondary); */
+        backdrop-filter: blur(15px) brightness(80%);
+        border: 2px solid #ffffff1f;
+    }
 
-		margin-left: auto;
-		margin-right: auto;
+    .customize-menu {
+        backdrop-filter: blur(15px) brightness(90%);
+    }
 
-		border: 2px solid #ffffff0f;
-		border-radius: 12px;
-		backdrop-filter: blur(32px);
-		
-		padding-top: 50px;
-		padding-bottom: 50px;
+    .modalOverlayOuter {
+        backdrop-filter: blur(15px) brightness(69%);
+    }
 
-	}
-	.search-handoff-button {
-		display: none !important;
-	}
-  
-  
-  .click-target-container *, .top-sites-list * {
+    .context-menu {
+        /*! background: var(--newtab-background-color-secondary); */
+        z-index: 10;
+        backdrop-filter: blur(15px) brightness(90%);
+    }
+
+    .logo-and-wordmark {
+        width: 512px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        border: 2px solid #ffffff0f;
+        border-radius: 12px;
+        backdrop-filter: blur(32px);
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .search-handoff-button {
+        display: none !important;
+    }
+
+    .click-target-container *,
+    .top-sites-list * {
         color: #fff !important ;
         text-shadow: 2px 2px 2px #222 !important ;
     }
