@@ -6,7 +6,7 @@ See the [Generic Installation](https://github.com/FirefoxCSS-Store/FirefoxCSS-St
 
 ## Credits & Attribution
 - Background image: found [here](https://cdn.nekos.life/wallpaper/4nUnmOeNXh8.png) (please don't question it), original seems to be here: https://x.com/i/status/682265733611393025
-- [GazirovanayaVoda/dorpivovar](https://github.com/dorpivovar) for part of the [userContent.css](https://github.com/GazirovanayaVoda/RoundFox/blob/main/userContent.css) file
+- [GazirovanayaVoda/dorpivovar](https://github.com/dorpivovar) for part of the [userContent.css](https://github.com/dorpivovar/firefox-theme/blob/main/userContent.css) file (funny)
 
 ## Gallery
 ### Please ignore the chrome changes, they are NOT part of this theme
